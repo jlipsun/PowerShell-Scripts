@@ -1,5 +1,5 @@
-$web = get-spweb "SharePoint-SiteCollection-URL"
-$doclib = $web.Lists["SharePoint-List"]
+$web = get-spweb "SP2013-SiteCollection-URL"
+$doclib = $web.Lists["SP2013-List"]
 $startdate = get-date
 write-host "Started on: " $startdate
 
