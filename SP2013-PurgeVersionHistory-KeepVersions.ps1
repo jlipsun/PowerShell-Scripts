@@ -13,7 +13,7 @@ $doclib.Items | % {
 $item = $_
 $itemName = $item.Name
 
-	#First, they want to purge data older than a certain date (let�s say 6 months old now, but this may change)
+	#First, they want to purge data older than a certain date (lets say 6 months old now, but this may change)
 	for($i=$item.Versions.Count-1; $i -gt 0; $i--)
 	{
 			$version = $item.Versions[$i]
@@ -34,8 +34,7 @@ $itemName = $item.Name
 	}	
 }
 
-
-#For any versions that remain, they would want to keep only X number of versions (let�s say the last 20 versions)
+#For any versions that remain, they would want to keep only X number of versions (lets say the last 20 versions)
 $doclib.MajorVersionLimit = 20
 $doclib.Update()
 
