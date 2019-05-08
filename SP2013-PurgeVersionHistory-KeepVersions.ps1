@@ -15,7 +15,8 @@ $itemName = $item.Name
 			[datetime]$versionDate = ($version.Created -split " ")[0]
 			[datetime]$dateDifference = ((get-date).AddMonths(-6) -split " ")[0]
 		
-			#if (($itemName -eq "FY15_DCP1474_CA_LLC_Tax.xlsx")) 
+			#To test a single existing file.
+			#if (($itemName -eq "test.docx")) 
 			#{
 				if ($versionDate -lt $dateDifference) 
 				{	
